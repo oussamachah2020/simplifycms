@@ -1,4 +1,4 @@
-# @your-cms/client
+# @simple-cms/client
 
 A lightweight TypeScript client library for programmatically interacting with the YourCMS API. This package allows developers to define schemas and seed initial content for their CMS projects directly in code, making it ideal for setting up projects as part of a development workflow. For ongoing content management, use the YourCMS Studio UI.
 
@@ -108,16 +108,16 @@ seedContent();
 ```
 
 ## API Reference
-==CMSClient==
+`CMSClient`
 Constructor
 
 ```ts
 new CMSClient(config: ClientConfig)
 ```
 
-- ==config.apiUrl==: The base URL of your CMS API (e.g., https://api.your-cms.com).
-- ==config.apiKey==: Your authentication token from the CLI.
-- ==config.projectId==: The ID of your CMS project.
+- `config.apiUrl`: The base URL of your CMS API (e.g., https://api.your-cms.com).
+- `config.apiKey`: Your authentication token from the CLI.
+- `config.projectId`: The ID of your CMS project.
 
 ### Methods
   migrateSchema(schema: Schema): Promise<void>
