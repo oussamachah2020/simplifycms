@@ -27,7 +27,10 @@ export class CMSClient {
 
     async createContent(content: Record<string, any>, schemaName: string): Promise<ContentItem> {
         try {
-            const response = await this.api.post('/content/create', {content, schemaName});
+            const response = await this.api.post("/content/create", {
+              schemaName,
+              data: content,
+            });
       return response.data;
         } catch (error: any) {
             throw new Error(`Failed to create content: ${error.response?.data?.message || error.message}`);

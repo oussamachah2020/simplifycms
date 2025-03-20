@@ -6,6 +6,7 @@ export interface SchemaField {
     description?: string;
 }
 export interface Schema {
+    name: string;
     fields: SchemaField[];
 }
 export interface ContentItem {

@@ -29,7 +29,10 @@ class CMSClient {
     async createContent(content, schemaName) {
         var _a, _b;
         try {
-            const response = await this.api.post('/content/create', { content, schemaName });
+            const response = await this.api.post("/content/create", {
+                schemaName,
+                data: content,
+            });
             return response.data;
         }
         catch (error) {

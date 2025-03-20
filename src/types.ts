@@ -24,7 +24,8 @@ export interface SchemaField {
 }
 
 export interface Schema {
-    fields: SchemaField[]
+  name: string;
+  fields: SchemaField[];
 }
 
 export interface ContentItem {
