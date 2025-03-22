@@ -38,3 +38,11 @@ export interface ClientConfig {
     apiKey: string
     projectId: string
 }
+
+export interface QueryOptions {
+  where?: Record<string, any>;
+  select?: string[];
+  limit?: number;
+  offset?: number;
+  sort?: { field: string; order: "asc" | "desc" };
+}
