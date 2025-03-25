@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES2018",
-    "module": "commonjs",
+    "module": "commonjs", // Or "ESNext" if you switched to ESM
     "outDir": "./dist",
     "rootDir": "./src",
-    "declaration": true,
+    "declaration": true, // Must be true to generate .d.ts files
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "node"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
