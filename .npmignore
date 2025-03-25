@@ -1,5 +1,5 @@
 src/
 *.ts
-tsconfig.json
+!dist/*.d.ts  # Ensure .d.ts files are included
 node_modules/
 test/
